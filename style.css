@@ -78,3 +78,93 @@ nav,.heading-container{
 }
 
 /* Main content styling */
+.main-container{
+    position: relative;
+    background-color: #E5E5E5;
+    /* min-height: 100vh; */
+    flex-wrap: 1;
+    padding: 50px;
+    padding-top: 100px;
+}
+/* Search box styling */
+.search-container{
+    width: clamp(500px,100%,1154px);
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    height: 100px;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    padding: 25px;
+}
+.search-container input ,.search-container select{
+    border: none;
+    font-size: 16px;
+}
+.search-box >svg,.select-box >svg{
+    margin: 5px;
+}
+.select-box select,.select-box option{
+    color: #7B7B7B;
+}
+.search-container> button{
+    background-color: #F07987;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: clamp(150px, 100%, 280px);
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Card styling */
+.card{
+    background-color: #fff;
+    width: 560px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    align-items: flex-start;
+}
+.card-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    margin: 10px;
+}
+.card-content{
+    flex: 1;
+    padding:15px 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+.card-content h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.card-content p{
+    font-size: 14px;
+    color: #7B7B7B;
+}
+.card-content button{
+    align-self: flex-end;
+    margin: 10px;
+    margin-right: 25px;
+    background-color: transparent;
+    padding:5px 10px;
+    border-radius: 5px;
+    border:2px solid#F07987;
+    cursor: pointer;
+    color: #F07987;
+    font-weight: 500;
+}
