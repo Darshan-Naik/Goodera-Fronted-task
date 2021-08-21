@@ -1,0 +1,80 @@
+/* default styling  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* flex box */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header stylings  */
+header{
+    background-image: linear-gradient(to left,#5DB0DF,#5D7ADF);
+    height: 364px;
+    padding:30px 50px ;
+
+}
+header *{
+    color: #fff;
+}
+nav,.heading-container{
+    max-width: 1146px;
+    margin: 0 auto;
+}
+.logo-box{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.logo-box svg{
+    margin: 5px;
+}
+.logo-box>h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-container {
+    flex:1;
+    justify-content: space-between;
+}
+.menu-container>ul{
+    list-style: none;
+}
+.menu-container>ul>li{
+    margin:0 20px;
+    position: relative;
+}
+.menu-container>ul>li:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.menu-container>ul>li:hover:after{
+    width: 50%;
+}
+.heading-container{
+    height: 80%;
+    flex-direction: column;
+   align-items: flex-start;
+}
+.heading-container>h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.heading-container>p{
+    font-size: 20px;
+}
+
+/* Main content styling */
