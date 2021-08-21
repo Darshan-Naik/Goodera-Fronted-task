@@ -88,7 +88,8 @@ nav,
 }
 /* Search box styling */
 .search-container {
-  width: clamp(90%, 1154px, 90%);
+  width: 90%;
+  max-width: 1154px;
   background-color: #fff;
   margin: auto;
   position: absolute;
